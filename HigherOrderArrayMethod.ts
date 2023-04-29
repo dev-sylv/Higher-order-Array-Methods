@@ -67,3 +67,35 @@ console.log(newArray1);
 // The parameters to reduce are, apart from the array, a combining function
 // and a start value. This function is a little less straightforward than filter and
 // map
+
+// 4. FOREACH METHOD:
+// It loops through the array and runs the given callback for each of the elements of the array.
+
+// The callback function passed to the forEach function can accept the currentItem, index, array.
+
+// Example
+// Given an array of numbers, log every number to the console(wat?!).
+
+// Solution:
+const arr = [1, 2, 3, 4, 5, 6, 7, 8];
+arr.forEach((val) => console.log(val));
+
+// The big difference between the map and forEach method is that the map method creates a new array, "mapping" the return value of the callback and create a new array, while the forEach method just iterates over the array.
+
+// 5. SOME METHOD:
+
+// The some method tests whether at least one element of the array complies with the given test in the callback, and returns true or false.
+
+// The callback function passed to the some function can accept the currentItem, index, array.
+
+// Example 1
+// Given two arrays of numbers, test whether each of the arrays have at least one number that is > 5, and log the result to the console.
+
+// Solution:
+const givenArray3 = [1, 2, 3, 5, 8];
+const givenArray4 = [1, 2, 3, 4, 5];
+const testArray1 = givenArray3.some((n) => n > 5);
+const testArray2 = givenArray4.some((n) => n > 5);
+console.log(`givenArray1: ${testArray1}; givenArray2: ${testArray2}`);
+
+// 6. EVERY:
