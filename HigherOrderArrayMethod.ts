@@ -95,7 +95,20 @@ arr.forEach((val) => console.log(val));
 const givenArray3 = [1, 2, 3, 5, 8];
 const givenArray4 = [1, 2, 3, 4, 5];
 const testArray1 = givenArray3.some((n) => n > 5);
-const testArray2 = givenArray4.some((n) => n > 5);
+const testArray2 = givenArray4.some((n) => n < 5);
 console.log(`givenArray1: ${testArray1}; givenArray2: ${testArray2}`);
 
 // 6. EVERY:
+// The every method is pretty similar to the some method, but it tests whether all the elements of the array complies with the given test in the callback, and returns true or false.
+
+// The callback function passed to the every function can accept the currentItem, index, array.
+
+// Example 2
+// Given two arrays of numbers, test whether each of the arrays have all the numbers >= 5, and log the result to the console.
+
+// Solution:
+const givenArray5 = [10, 9, 8, 7, 6];
+const givenArray6 = [5, 1, 2, 785, 45];
+const testArray3 = givenArray5.every((n) => n > 5);
+const testArray4 = givenArray6.every((n) => n > 5);
+console.log(`givenArray3: ${testArray3}; givenArray4: ${testArray4}`);
