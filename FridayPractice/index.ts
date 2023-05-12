@@ -28,3 +28,22 @@ console.log([2, 4, 5, 6, 7, 8, 5, 9].join().slice(0, 5));
 // foo -> foo1
 
 // foobar23 -> foobar24
+console.log("foo" + 1);
+
+// 4. Write function scramble(str1,str2) that returns true if a portion of str1 characters can be rearranged to match str2, otherwise returns false.
+
+// For example:
+// str1 is 'rkqodlw' and str2 is 'world' the output should return true.
+// str1 is 'cedewaraaossoqqyt' and str2 is 'codewars' should return true.
+// str1 is 'katas' and str2 is 'steak' should return false.
+
+// 5. Your online store likes to give out coupons for special occasions. Some customers try to cheat the system by entering invalid codes or using expired coupons.
+
+// Your mission:
+// Write a function called checkCoupon to verify that a coupon is valid and not expired. If the coupon is good, return true. Otherwise, return false.
+
+// A coupon expires at the END of the expiration date. All dates will be passed in as strings in this format: "June 15, 2014"
+
+// 6. Write a function that converts user entered date formatted as M/D/YYYY to a format required by an API (YYYYMMDD). The parameter "userDate" and the return value are strings.
+
+// For example, it should convert user entered date "12/31/2014" to "20141231" suitable for the API.
